@@ -1,0 +1,431 @@
+Converting GML script: ${project_dir}\scripts\scr_sound_callback_sample\scr_sound_callback_sample.gml
+Converted string - line 1: 'beep' -> "beep"
+
+Converting GML script: ${project_dir}\scripts\scr_listbox_drawline_sample_custom\scr_listbox_drawline_sample_custom.gml
+Converted string - line 47: '$4.50' -> "$4.50"
+
+Converting GML script: ${project_dir}\objects\ui_defaults\Create_0.gml
+Converted string - line 41: '' -> ""
+Converted string - line 54: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_defaults\Alarm_11.gml
+Converted description /// @description used for uiDestroy,  like fadeout splash type labels...
+
+Converting GML script: ${project_dir}\objects\ui_defaults\Other_22.gml
+Converted description /// @description create ease object for animation
+
+Converting GML script: ${project_dir}\objects\ui_defaults\Other_21.gml
+Converted description /// @description for resizing in code
+
+Converting GML script: ${project_dir}\objects\ui_defaults\Other_20.gml
+Converted description /// @description sound controls....
+
+Converting GML script: ${project_dir}\objects\ui_defaults\Draw_0.gml
+Converted builtin - line 23: view_xview[view_current] -> __view_get( e__VW.XView, view_current )
+Converted builtin - line 24: view_yview[view_current] -> __view_get( e__VW.YView, view_current )
+
+Converting GML script: ${project_dir}\objects\ui_defaults\KeyPress_1.gml
+Converted string - line 7: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_label\Create_0.gml
+Converted string - line 32: '' -> ""
+Converted string - line 33: '' -> ""
+Converted string - line 35: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_label\Other_11.gml
+Converted description /// @description break apart memo string
+Converted string - line 8: '' -> ""
+Converted string - line 9: '' -> ""
+Converted string - line 13: '' -> ""
+Converted string - line 21: ' ' -> " "
+Converted string - line 21: '#' -> "#"
+Converted string - line 31: '#' -> "#"
+Converted string - line 31: '\' -> "\\"
+Converted string - line 35: '#' -> "#"
+Converted string - line 37: ' ' -> " "
+Converted string - line 40: ' ' -> " "
+Converted string - line 42: ' ' -> " "
+Converted string - line 44: '' -> ""
+Converted string - line 56: '' -> ""
+Converted string - line 58: '' -> ""
+Converted string - line 61: '' -> ""
+Converted string - line 67: 'XgpT' -> "XgpT"
+
+Converting GML script: ${project_dir}\objects\ui_label\Draw_0.gml
+Converted string - line 52: 'X' -> "X"
+Converted string - line 67: 'XgpT' -> "XgpT"
+
+Converting GML script: ${project_dir}\objects\ui_button_ani\Draw_0.gml
+Converted string - line 175: 'X' -> "X"
+Converted string - line 200: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox_ext\Create_0.gml
+Converted string - line 23: '' -> ""
+Converted string - line 62: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox_ext\Step_0.gml
+Converted string - line 1: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox_ext\Other_11.gml
+Converted description /// @description break apart memo string
+Converted string - line 8: '' -> ""
+Converted string - line 9: '' -> ""
+Converted string - line 10: '' -> ""
+Converted string - line 14: '' -> ""
+Converted string - line 22: ' ' -> " "
+Converted string - line 22: '#' -> "#"
+Converted string - line 32: '#' -> "#"
+Converted string - line 32: '\' -> "\\"
+Converted string - line 36: '#' -> "#"
+Converted string - line 38: ' ' -> " "
+Converted string - line 41: ' ' -> " "
+Converted string - line 43: ' ' -> " "
+Converted string - line 45: '' -> ""
+Converted string - line 57: '' -> ""
+Converted string - line 59: '' -> ""
+Converted string - line 62: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox_ext\Other_10.gml
+Converted description /// @description mouse lifted or moved off control
+
+Converting GML script: ${project_dir}\objects\ui_listbox_ext\Draw_0.gml
+Converted string - line 32: 'XgpT' -> "XgpT"
+Converted string - line 84: 'X' -> "X"
+Converted string - line 169: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox\Create_0.gml
+Converted string - line 23: 'Items Not Set' -> "Items Not Set"
+Converted string - line 60: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox\Step_0.gml
+Converted string - line 1: '' -> ""
+Converted string - line 3: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox\Other_11.gml
+Converted description /// @description break apart memo string
+Converted string - line 8: '' -> ""
+Converted string - line 9: '' -> ""
+Converted string - line 10: '' -> ""
+Converted string - line 14: '' -> ""
+Converted string - line 22: ' ' -> " "
+Converted string - line 22: '#' -> "#"
+Converted string - line 32: '#' -> "#"
+Converted string - line 32: '\' -> "\\"
+Converted string - line 36: '#' -> "#"
+Converted string - line 38: ' ' -> " "
+Converted string - line 41: ' ' -> " "
+Converted string - line 43: ' ' -> " "
+Converted string - line 45: '' -> ""
+Converted string - line 57: '' -> ""
+Converted string - line 59: '' -> ""
+Converted string - line 62: '' -> ""
+Converted string - line 67: 'XgpT' -> "XgpT"
+
+Converting GML script: ${project_dir}\objects\ui_listbox\Other_10.gml
+Converted description /// @description mouse lifted or moved off control
+
+Converting GML script: ${project_dir}\objects\ui_listbox\Draw_0.gml
+Converted string - line 32: '))*uiYscale + uiLineSpacing;
+
+totheight=numitems * lineheight;  //info only for other controls.
+
+if (uiZoomFactor==0.1) || (uiVisible==false) exit;  //for zooming   
+ -> "))*uiYscale + uiLineSpacing;
+
+totheight=numitems * lineheight;  //info only for other controls.
+
+if (uiZoomFactor==0.1) || (uiVisible==false) exit;  //for zooming   "
+
+Converting GML script: ${project_dir}\objects\ui_button\Draw_0.gml
+Converted string - line 93: 'X' -> "X"
+Converted string - line 111: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_bubble\Create_0.gml
+Converted string - line 25: '' -> ""
+Converted string - line 55: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_bubble\Step_0.gml
+Converted string - line 1: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_bubble\Other_12.gml
+Converted description /// @description call when we need to resize
+
+Converting GML script: ${project_dir}\objects\ui_bubble\Other_11.gml
+Converted description /// @description fade out and destroy
+
+Converting GML script: ${project_dir}\objects\ui_bubble\Other_10.gml
+Converted description /// @description drawn when uiTextValue is changed.
+Converted string - line 38: '' -> ""
+Converted string - line 72: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_label_score\Create_0.gml
+Converted string - line 28: ',' -> ","
+
+Converting GML script: ${project_dir}\objects\ui_editbox\Create_0.gml
+ERROR: C:\Users\PC\Documents\GameMakerStudio2\MT_Build_02_00\objects\ui_editbox\Create_0.gml - 45: single quotes no longer allowed for string
+ERROR: C:\Users\PC\Documents\GameMakerStudio2\MT_Build_02_00\objects\ui_editbox\Create_0.gml - 45: unexpected unary operator =
+ERROR: C:\Users\PC\Documents\GameMakerStudio2\MT_Build_02_00\objects\ui_editbox\Create_0.gml - 47: single quotes no longer allowed for string
+ERROR: C:\Users\PC\Documents\GameMakerStudio2\MT_Build_02_00\objects\ui_editbox\Create_0.gml - 47: unexpected unary operator =
+Too many errors - GML not processed : ${project_dir}\objects\ui_editbox\Create_0.gml
+
+Converting GML script: ${project_dir}\objects\ui_editbox\Keyboard_1.gml
+Converted string - line 41: '' -> ""
+Converted string - line 46: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_editbox\Mouse_4.gml
+Converted string - line 8: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_editbox\Other_63.gml
+Converted string - line 14: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_editbox\Other_11.gml
+Converted description /// @description from keyboard
+Converted string - line 3: '' -> ""
+Converted string - line 7: 'back' -> "back"
+Converted string - line 11: '' -> ""
+Converted string - line 14: 'enter' -> "enter"
+Converted string - line 22: '' -> ""
+Converted string - line 25: '' -> ""
+Converted string - line 27: "\#" -> "\\#"
+Converted string - line 30: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_editbox\Other_10.gml
+Converted description /// @description Set Focus
+Converted string - line 17: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_editbox\Draw_0.gml
+Converted string - line 37: "\#" -> "\\#"
+Converted string - line 39: 'X' -> "X"
+Converted string - line 43: "\#" -> "\\#"
+Converted string - line 50: '' -> ""
+Converted string - line 51: 'X' -> "X"
+Converted string - line 55: '#' -> "#"
+Converted string - line 55: '\#' -> "\\#"
+Converted string - line 70: '' -> ""
+Converted string - line 82: "\#" -> "\\#"
+Converted string - line 96: "\#" -> "\\#"
+Converted string - line 106: '#' -> "#"
+Converted string - line 106: '\#' -> "\\#"
+Converted string - line 122: '' -> ""
+Converted string - line 124: 'X' -> "X"
+
+Converting GML script: ${project_dir}\objects\ui_dialog\Create_0.gml
+Converted string - line 88: '' -> ""
+Converted string - line 95: '' -> ""
+Converted string - line 96: '*' -> "*"
+Converted string - line 116: '' -> ""
+Converted string - line 119: 'button' -> "button"
+
+Converting GML script: ${project_dir}\objects\ui_dialog\Other_14.gml
+Converted description /// @description restore mouse controls underneath panel.
+
+Converting GML script: ${project_dir}\objects\ui_dialog\Other_13.gml
+Converted description /// @description will disable all mouse controls beneath panel;
+
+Converting GML script: ${project_dir}\objects\ui_dialog\Other_11.gml
+Converted description /// @description create dialog and it's components
+Converted string - line 25: '' -> ""
+Converted string - line 31: 'OK' -> "OK"
+Converted string - line 48: '' -> ""
+Converted string - line 61: '' -> ""
+Converted string - line 70: '' -> ""
+Converted string - line 87: '' -> ""
+Converted string - line 105: '' -> ""
+Converted string - line 137: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_dialog\Other_10.gml
+Converted description /// @description button pressed;
+Converted string - line 11: 'button1' -> "button1"
+Converted string - line 12: 'button2' -> "button2"
+Converted string - line 13: 'button3' -> "button3"
+Converted string - line 14: 'button4' -> "button4"
+
+Converting GML script: ${project_dir}\objects\ui_combobox\Create_0.gml
+Converted string - line 23: 'Items Not Set' -> "Items Not Set"
+
+Converting GML script: ${project_dir}\objects\ui_combobox\Alarm_0.gml
+Converted description /// @description destory lookuplist object
+
+Converting GML script: ${project_dir}\objects\ui_combobox\Mouse_4.gml
+Converted string - line 14: 'XgpT' -> "XgpT"
+
+Converting GML script: ${project_dir}\objects\ui_combobox\Other_10.gml
+Converted description /// @description Process event from lookuplist object
+
+Converting GML script: ${project_dir}\objects\ui_combobox\Draw_0.gml
+Converted string - line 42: 'X' -> "X"
+
+Converting GML script: ${project_dir}\objects\ui_checkgroup\Create_0.gml
+Converted string - line 23: 'Items Not Set' -> "Items Not Set"
+
+Converting GML script: ${project_dir}\objects\ui_checkgroup\Draw_0.gml
+Converted string - line 45: '' -> ""
+Converted string - line 80: 'X' -> "X"
+
+Converting GML script: ${project_dir}\objects\ui_checkbox\Draw_0.gml
+Converted string - line 40: 'X' -> "X"
+
+Converting GML script: ${project_dir}\objects\ui_textbox\Mouse_4.gml
+Converted string - line 9: "\#" -> "\\#"
+
+Converting GML script: ${project_dir}\objects\ui_textbox\Other_63.gml
+Converted string - line 14: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_textbox\Draw_0.gml
+Converted string - line 35: '' -> ""
+Converted string - line 37: '' -> ""
+Converted string - line 41: "\#" -> "\\#"
+Converted string - line 51: 'X' -> "X"
+
+Converting GML script: ${project_dir}\objects\ui_textani\Create_0.gml
+Converted string - line 36: '' -> ""
+Converted string - line 42: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_textani\Draw_0.gml
+Converted string - line 124: ' ' -> " "
+
+Converting GML script: ${project_dir}\objects\ui_slider\Other_10.gml
+Converted description /// @description  on mouse movement
+
+Converting GML script: ${project_dir}\objects\ui_panel\Other_14.gml
+Converted description /// @description restore mouse controls underneath panel.
+
+Converting GML script: ${project_dir}\objects\ui_panel\Other_13.gml
+Converted description /// @description will disable all mouse controls beneath panel;
+
+Converting GML script: ${project_dir}\objects\ui_panel\Other_12.gml
+Converted description /// @description called to restore states of children
+
+Converting GML script: ${project_dir}\objects\ui_panel\Other_11.gml
+Converted description /// @description called to save states of children
+
+Converting GML script: ${project_dir}\objects\ui_listbox_horz\Create_0.gml
+Converted string - line 23: '' -> ""
+Converted string - line 67: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox_horz\Step_0.gml
+Converted string - line 1: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox_horz\Other_11.gml
+Converted description /// @description break apart memo string
+Converted string - line 8: '' -> ""
+Converted string - line 9: '' -> ""
+Converted string - line 10: '' -> ""
+Converted string - line 14: '' -> ""
+Converted string - line 22: ' ' -> " "
+Converted string - line 22: '#' -> "#"
+Converted string - line 32: '#' -> "#"
+Converted string - line 32: '\' -> "\\"
+Converted string - line 36: '#' -> "#"
+Converted string - line 38: ' ' -> " "
+Converted string - line 41: ' ' -> " "
+Converted string - line 43: ' ' -> " "
+Converted string - line 45: '' -> ""
+Converted string - line 57: '' -> ""
+Converted string - line 59: '' -> ""
+Converted string - line 62: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_listbox_horz\Other_10.gml
+Converted description /// @description mouse lifted or moved off control
+
+Converting GML script: ${project_dir}\objects\ui_listbox_horz\Draw_0.gml
+Converted string - line 91: 'X' -> "X"
+Converted string - line 143: 'Xypg' -> "Xypg"
+Converted string - line 218: '' -> ""
+Converted string - line 218: 'Xypg' -> "Xypg"
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Create_0.gml
+Converted string - line 37: 'qwertyuiop' -> "qwertyuiop"
+Converted string - line 38: 'QWERTYUIOP' -> "QWERTYUIOP"
+Converted string - line 39: '1234567890' -> "1234567890"
+Converted string - line 44: 'asdfghjkl' -> "asdfghjkl"
+Converted string - line 45: 'ASDFGHJKL' -> "ASDFGHJKL"
+Converted string - line 46: '!@$%&-+()' -> "!@$%&-+()"
+Converted string - line 51: 'zxcvbnm,.' -> "zxcvbnm,."
+Converted string - line 52: 'ZXCVBNM<>' -> "ZXCVBNM<>"
+Converted string - line 53: "[]~\/:;'" -> "[]~\\/:;'"
+Converted string - line 53: '"_=?' -> "\"_=?"
+Converted string - line 57: '' -> ""
+Converted string - line 58: '?123' -> "?123"
+Converted string - line 59: 'ABC' -> "ABC"
+Converted string - line 60: '' -> ""
+Converted string - line 61: '' -> ""
+Converted string - line 62: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Step_0.gml
+Converted string - line 21: 'ui_editbox' -> "ui_editbox"
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Other_16.gml
+Converted description /// @description process eventobject when enter pressed
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Other_15.gml
+Converted description /// @description destroy memory
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Other_14.gml
+Converted description /// @description show keyboard event
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Other_13.gml
+Converted description /// @description refresh keys...like shift pressed
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Other_12.gml
+Converted description /// @description hide keyboard
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Other_11.gml
+Converted description /// @description set keys and board
+Converted string - line 54: 'key' -> "key"
+Converted string - line 93: 'back' -> "back"
+Converted string - line 103: '' -> ""
+Converted string - line 124: 'shift' -> "shift"
+Converted string - line 134: '' -> ""
+Converted string - line 152: ' ' -> " "
+Converted string - line 155: 'key' -> "key"
+Converted string - line 180: 'enter' -> "enter"
+Converted string - line 190: '' -> ""
+Converted string - line 210: 'state' -> "state"
+Converted string - line 235: 'hide' -> "hide"
+Converted string - line 245: '' -> ""
+
+Converting GML script: ${project_dir}\objects\ui_keyboard\Other_10.gml
+Converted description /// @description keypressed event
+Converted string - line 6: '\#' -> "\\#"
+Converted string - line 6: '#' -> "#"
+Converted string - line 8: 'ui_editbox' -> "ui_editbox"
+Converted string - line 11: 'key' -> "key"
+Converted string - line 21: 'back' -> "back"
+Converted string - line 24: 'back' -> "back"
+Converted string - line 28: 'enter' -> "enter"
+Converted string - line 31: 'enter' -> "enter"
+Converted string - line 36: 'shift' -> "shift"
+Converted string - line 44: 'state' -> "state"
+Converted string - line 49: 'hide' -> "hide"
+
+Converting GML script: ${project_dir}\objects\ui_ani_control\Other_16.gml
+Converted description /// @description animation for ONCE animation (popup...etc)/// @function animation for ONCE animation 
+/// @param popup...etc
+
+Converting GML script: ${project_dir}\objects\ui_ani_control\Other_15.gml
+Converted description /// @description sparkle
+
+Converting GML script: ${project_dir}\objects\ui_ani_control\Other_14.gml
+Converted description /// @description sin animation (2 pi/ runs continous)/// @function sin animation 
+/// @param 2 pi/ runs continous
+
+Converting GML script: ${project_dir}\objects\ui_ani_control\Other_13.gml
+Converted description /// @description movement animation
+
+Converting GML script: ${project_dir}\objects\ui_ani_control\Other_12.gml
+Converted description /// @description set ease defaults
+
+Converting GML script: ${project_dir}\objects\ui_ani_control\Other_11.gml
+Converted description /// @description ease function
+
+Converting GML script: ${project_dir}\objects\ui_swipe\Create_0.gml
+Converted string - line 17: '' -> ""
+
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'texture/texture_set_interpolation.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

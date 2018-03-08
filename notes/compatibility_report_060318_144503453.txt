@@ -1,0 +1,107 @@
+Converting GML script: ${project_dir}\scripts\ctb_init\ctb_init.gml
+Converted description /// @description  ctb_init();/// @function  ctb_init
+
+Converting GML script: ${project_dir}\scripts\ctb_load_normal\ctb_load_normal.gml
+Converted description /// @description  ctb_load_normal( sprite, width, height )/// @function  ctb_load_normal
+/// @param  sprite
+/// @param  width
+/// @param  height
+
+Converting GML script: ${project_dir}\scripts\ctb_load_subimage\ctb_load_subimage.gml
+Converted description /// @description  ctb_load_subimage( sprite, width, height )/// @function  ctb_load_subimage
+/// @param  sprite
+/// @param  width
+/// @param  height
+
+Converting GML script: ${project_dir}\scripts\ctb_load_slice9\ctb_load_slice9.gml
+Converted description /// @description  ctb_load_slice9( sprite, left, right, top, bottom, width, height )/// @function  ctb_load_slice9
+/// @param  sprite
+/// @param  left
+/// @param  right
+/// @param  top
+/// @param  bottom
+/// @param  width
+/// @param  height
+
+Converting GML script: ${project_dir}\scripts\ctb_add_color\ctb_add_color.gml
+Converted description /// @description  ctb_add_color( color_name, color_value );/// @function  ctb_add_color
+/// @param  color_name
+/// @param  color_value
+
+Converting GML script: ${project_dir}\scripts\ctb_add_font\ctb_add_font.gml
+Converted description /// @description  ctb_add_font( font_name, font_value );/// @function  ctb_add_font
+/// @param  font_name
+/// @param  font_value
+
+Converting GML script: ${project_dir}\scripts\ctb_add_sound\ctb_add_sound.gml
+Converted description /// @description  ctb_add_sound( sound_name, sound_value );/// @function  ctb_add_sound
+/// @param  sound_name
+/// @param  sound_value
+
+Converting GML script: ${project_dir}\scripts\ctb_add_command\ctb_add_command.gml
+Converted description /// @description  ctb_add_command( cmd_name, cmd_script )/// @function  ctb_add_command
+/// @param  cmd_name
+/// @param  cmd_script
+
+Converting GML script: ${project_dir}\scripts\ctb_create\ctb_create.gml
+Converted description /// @description  ctb_create
+
+Converting GML script: ${project_dir}\scripts\ctb_add_text\ctb_add_text.gml
+Converted description /// @description  ctb_add_text( [ textbox_id ], text );/// @function  ctb_add_text
+/// @param  [ textbox_id ]
+/// @param  text
+
+Converting GML script: ${project_dir}\scripts\ctb_set_key\ctb_set_key.gml
+Converted description /// @description  ctb_set_key( key )/// @function  ctb_set_key
+/// @param  key
+
+Converting GML script: ${project_dir}\scripts\ctb_update\ctb_update.gml
+Converted description /// @description  ctb_update()/// @function  ctb_update
+Converted string - line 47: "\#" -> "\\#"
+
+Converting GML script: ${project_dir}\scripts\ctb_draw\ctb_draw.gml
+Converted description /// @description  ctb_draw()/// @function  ctb_draw
+
+Converting GML script: ${project_dir}\scripts\ctb_set_padding\ctb_set_padding.gml
+Converted description /// @description  ctb_set_padding( left, right, top, bottom )/// @function  ctb_set_padding
+/// @param  left
+/// @param  right
+/// @param  top
+/// @param  bottom
+
+Converting GML script: ${project_dir}\scripts\ctb_parse_text\ctb_parse_text.gml
+Converted description /// @description  ctb_parse_text( text )/// @function  ctb_parse_text
+/// @param  text
+
+Converting GML script: ${project_dir}\scripts\_ctb_create_tag\_ctb_create_tag.gml
+Converted description /// @description  _ctb_create_tag( tag_name, tag_value );/// @function  _ctb_create_tag
+/// @param  tag_name
+/// @param  tag_value
+
+Converting GML script: ${project_dir}\scripts\_ctb_create_word\_ctb_create_word.gml
+Converted description /// @description  _ctb_create_word( x,y,color,font,text );/// @function  _ctb_create_word
+/// @param  x
+/// @param y
+/// @param color
+/// @param font
+/// @param text
+
+Converting GML script: ${project_dir}\scripts\_ctb_build_word_list\_ctb_build_word_list.gml
+Converted description /// @description  _ctb_build_word_list( text )/// @function  _ctb_build_word_list
+/// @param  text
+Converted string - line 74: "\#" -> "\\#"
+
+Converting GML script: ${project_dir}\scripts\_ctb_word_to_message\_ctb_word_to_message.gml
+Converted description /// @description  _ctb_word_to_message( text_area_width, text_area_height, words )/// @function  _ctb_word_to_message
+/// @param  text_area_width
+/// @param  text_area_height
+/// @param  words
+Converted string - line 32: "\#" -> "\\#"
+Converted string - line 32: "\#" -> "\\#"
+
+!!! Font f_normal uses a font (Ubuntu) not installed on this system - Font has NOT been regenerated
+!!! Font f_other uses a font (Ubuntu) not installed on this system - Font has NOT been regenerated
+Missing audiogroup for sound: 'snd_gun' - setting to default audio group
+Added compatibility script 'draw/draw_set_blend_mode.gml'
+Added compatibility script 'draw/draw_set_blend_mode_ext.gml'
+Added compatibility script 'sound/sound_exists.gml'
