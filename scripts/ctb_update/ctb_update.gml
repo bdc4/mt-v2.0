@@ -79,8 +79,16 @@ if( !pause ) {
                 if( current_pos == string_length( me[5] ) ) {
                     current_word = ds_list_size( current_message );
                     if( skip ) {
-                        if( ds_queue_empty( messages ) ) instance_destroy();
-                        else
+                        if( ds_queue_empty( messages )) { 
+							with (GUI) {
+								tb_easing[? "start"] = yy*13/16;
+								tb_easing[? "dest"] = textboxArea[3]-1;
+								tb_easing[? "duration"] = 60;
+								tb_easing[? "time"] = 0;
+															}
+							fadeOut = true;
+						}
+						else
                         {
                             current_message = ds_queue_dequeue( messages );
                             current_word = 0;
@@ -90,8 +98,8 @@ if( !pause ) {
                 }
             }
             else if( skip ) {
-                if( ds_queue_empty( messages ) ) instance_destroy();
-                else
+                //if( ds_queue_empty( messages ) ) instance_destroy();
+                //else
                 {
                     current_message = ds_queue_dequeue( messages );
                     current_word = 0;

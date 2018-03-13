@@ -1,8 +1,36 @@
 /// @description Set up GUI controller
 // You can write your code in this editor
+#region Controller
+if keyboard_check_pressed(ord("R")) game_restart();
 
-var tba = textboxArea;
-draw_set_color(c_black);
-//draw_rectangle(tba[0],tba[1],tba[2],tba[3],false);
+if keyboard_check_pressed(vk_f4)
+   {
+   if window_get_fullscreen()
+      {
+      window_set_fullscreen(false);
+      }
+   else
+      {
+      window_set_fullscreen(true);
+      }
+   }
+#endregion
 
-x_gui_update_textbox("This is a test of the textbox area!");
+#region Textbox Easing
+if (tb_easing[? "time"] < tb_easing[? "duration"]) {
+	textboxArea[1] = ease_out_back(tb_easing[? "time"],tb_easing[? "start"],tb_easing[? "dest"]-tb_easing[? "start"],tb_easing[? "duration"]);
+	tb_easing[? "time"]++;
+}
+#endregion
+#region Leftbox Easing
+if (lb_easing[? "time"] < lb_easing[? "duration"]) {
+	leftboxArea[0] = ease_out_back(lb_easing[? "time"],lb_easing[? "start"],lb_easing[? "dest"]-lb_easing[? "start"],lb_easing[? "duration"]);
+	lb_easing[? "time"]++;
+}
+#endregion
+#region Rightbox Easing
+if (rb_easing[? "time"] < rb_easing[? "duration"]) {
+	rightboxArea[0] = ease_out_back(rb_easing[? "time"],rb_easing[? "start"],rb_easing[? "dest"]-rb_easing[? "start"],rb_easing[? "duration"]);
+	rb_easing[? "time"]++;
+}
+#endregion

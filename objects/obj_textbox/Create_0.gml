@@ -38,9 +38,8 @@ ctb_set_padding( 116,10,10,10 );
 
 // Set the textbox's background
 sprite_index = ctb_load_subimage( spr_textbox_slice9_subimages, GUI.textboxArea[2], GUI.textboxArea[3]-GUI.textboxArea[1]);
-
+fadeOut = false;
 // Add some text in the textbox.
-
 
 /* */
 /*  */
