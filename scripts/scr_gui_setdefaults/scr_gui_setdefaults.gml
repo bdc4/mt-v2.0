@@ -12,3 +12,6 @@ uiTextValue="";
 uiTextLabel="";
 uiSetWidth=100;
 uiSetHeight=30;
+uiDrawBackColor=false;
+uiBackColor = c_navy;
+uiBackColor2 = 0;

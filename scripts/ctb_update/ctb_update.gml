@@ -19,8 +19,8 @@
           You can make it resume by making it visible again.
 */
 if( !visible ) exit;
-
-var skip = keyboard_check_pressed( CTB_SkipKey );
+var inArea = point_in_rectangle(mouse_x,mouse_y,0,room_height-sprite_height/4,sprite_width,room_height);
+var skip = keyboard_check_pressed(CTB_SkipKey) or (mouse_check_button_pressed(mb_left) and point_in_rectangle(mouse_x,mouse_y,x,y,x+sprite_width,y+sprite_height));
 
 if( !pause ) {
 
@@ -78,24 +78,37 @@ if( !pause ) {
             if( me[0] == "word" ) {
                 if( current_pos == string_length( me[5] ) ) {
                     current_word = ds_list_size( current_message );
-                    if( skip ) {
+                    if( skip or inArea) {
                         if( ds_queue_empty( messages )) { 
+						
+							if inArea {
+								if skip {
+									if !fadeOut exit;
+									x_gui_maximize_textbox();
+									fadeOut = false;
+									exit;		
+								}
+								if fadeOut {
+									x_gui_maximize_textbox();
+									fadeOut = false;
+									exit;
+								}
+							}
 							
-							if !fadeOut {
-								tb_easing[? "start"] = yy*13/16;
-								tb_easing[? "dest"] = textboxArea[3]-1;
-								tb_easing[? "duration"] = 60;
-								tb_easing[? "time"] = 0;
+							//Minimize
+							if (!fadeOut) and !inArea {
+								x_gui_minimize_textbox();
 								fadeOut = true;
 								exit;
 							}
-							if fadeOut {
-								tb_easing[? "start"] = textboxArea[3]-1;
-								tb_easing[? "dest"] = yy*13/16;
-								tb_easing[? "duration"] = 60;
-								tb_easing[? "time"] = 0;
+							
+							//Maximize
+							else if fadeOut and !inArea  {
+								x_gui_maximize_textbox();
 								fadeOut = false;
+								exit;
 							}
+
 						}
 						else
                         {
