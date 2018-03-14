@@ -15,6 +15,8 @@
     Simply call this script in the draw event of your textbox object.
 */
 draw_self();
+draw_set_valign(fa_top);
+draw_set_halign(fa_left);
 
 if( current_message != noone ) {
 

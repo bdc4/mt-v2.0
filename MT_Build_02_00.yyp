@@ -863,6 +863,14 @@
             }
         },
         {
+            "Key": "9f270591-2721-4681-bdd8-d212e4ea1938",
+            "Value": {
+                "id": "72c97b74-bfb4-4395-9b75-8084eaf8b23b",
+                "resourcePath": "fonts\\font_ui\\font_ui.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "9f7186a5-8683-4d86-8ecd-9489b2f5fe6b",
             "Value": {
                 "id": "9532a972-dac4-4127-b681-460a52e58faa",
@@ -1243,6 +1251,14 @@
             "Value": {
                 "id": "9da0bf51-868c-4ad1-8c33-3dda4beb73f2",
                 "resourcePath": "objects\\ui_button\\ui_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ed57f7d0-06e2-4d56-92b8-f38c31e6f40c",
+            "Value": {
+                "id": "c1c7f107-5cda-4d51-ac14-144200bc69a1",
+                "resourcePath": "objects\\obj_leftMenu_closeBtn\\obj_leftMenu_closeBtn.yy",
                 "resourceType": "GMObject"
             }
         },

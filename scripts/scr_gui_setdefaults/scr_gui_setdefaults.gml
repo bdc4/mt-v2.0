@@ -8,3 +8,7 @@
 
 //  ex:
 // uiFont=fnt_MenuDefault;
+uiTextValue="";
+uiTextLabel="";
+uiSetWidth=100;
+uiSetHeight=30;

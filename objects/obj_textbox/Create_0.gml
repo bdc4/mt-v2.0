@@ -3,8 +3,22 @@
     all the below functions.
 */
 
+#region Textbox Area & Easing
+xx = camera_get_view_width(view_camera[0]);
+yy = camera_get_view_height(view_camera[0]);
+
+textboxArea = [0,yy*13/16,xx,yy];
+tb_easing = ds_map_create();
+//tb_easing[? "start"] = textboxArea[3]-1;
+//tb_easing[? "dest"] = yy*13/16;
+//tb_easing[? "duration"] = 30;
+//tb_easing[? "time"] = 0;
+#endregion
+
 // Initialize the CTB engine
 ctb_init();
+msg = "";
+fadeOut = false;
 
 // Mark this object as being a textbox
 ctb_create();
@@ -37,9 +51,12 @@ ctb_add_command( "char", command_char );
 ctb_set_padding( 116,10,10,10 );
 
 // Set the textbox's background
-sprite_index = ctb_load_subimage( spr_textbox_slice9_subimages, GUI.textboxArea[2], GUI.textboxArea[3]-GUI.textboxArea[1]);
-fadeOut = false;
+sprite_index = ctb_load_subimage( spr_textbox_slice9_subimages, textboxArea[2], textboxArea[3]-textboxArea[1]);
+
 // Add some text in the textbox.
 
 /* */
 /*  */
+
+
+

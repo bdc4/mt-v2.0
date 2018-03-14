@@ -80,13 +80,22 @@ if( !pause ) {
                     current_word = ds_list_size( current_message );
                     if( skip ) {
                         if( ds_queue_empty( messages )) { 
-							with (GUI) {
+							
+							if !fadeOut {
 								tb_easing[? "start"] = yy*13/16;
 								tb_easing[? "dest"] = textboxArea[3]-1;
 								tb_easing[? "duration"] = 60;
 								tb_easing[? "time"] = 0;
-															}
-							fadeOut = true;
+								fadeOut = true;
+								exit;
+							}
+							if fadeOut {
+								tb_easing[? "start"] = textboxArea[3]-1;
+								tb_easing[? "dest"] = yy*13/16;
+								tb_easing[? "duration"] = 60;
+								tb_easing[? "time"] = 0;
+								fadeOut = false;
+							}
 						}
 						else
                         {
