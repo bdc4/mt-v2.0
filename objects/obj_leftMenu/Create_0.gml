@@ -21,10 +21,33 @@ menuLock = false;
 
 //Create Menu Btns
 lm_button = ds_map_create();
-var btnLabels = ["Lock Menu", "Save Game", "Options"];
+
+#region Lock Menu Btn
+lm_button[? "Lock Menu"] = instance_create_layer(x,y+sprite_height,GUI.GUI_FRONT,ui_button_ani);
+with lm_button[? "Lock Menu"] {
+	uiTextValue = "";
+	uiButtonSprite = spr_lockIcon;
+	uiSetWidth = sprite_get_width(uiButtonSprite);
+	uiSetHeight = sprite_get_height(uiButtonSprite);
+	y -= uiSetHeight/2;
+	uiButtonSpriteDown = spr_unlockIcon;
+	uiButtonState = 0;
+	uiBackColor = c_white;
+	uiHoverColor = c_black;
+	uiEventObject = other;
+	uiControlName = "x_lock_menu";
+	class = ".top";
+}
+#endregion
+
+
+var btnLabels = ["Quit", "Save Game", "Options"];
 
 for (var i=0; i < array_length_1d(btnLabels); i++) {
 	var label = btnLabels[i];
+	
+	if ds_map_exists(lm_button, label) continue;
+	
 	lm_button[? label] = instance_create_layer(x,y+sprite_height-sprite_height*.15*(i+1),GUI.GUI_FRONT,ui_button_ani);
 
 	with (lm_button[? label]) {
@@ -40,3 +63,4 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 		x = other.x;
 	}
 }
+

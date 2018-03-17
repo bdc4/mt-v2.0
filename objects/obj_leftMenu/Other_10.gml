@@ -3,7 +3,7 @@
 switch (other.uiControlName) {
 	case "x_lock_menu": 
 		menuLock = !menuLock; 
-		other.uiTextValue = menuLock ? "Unlock#Menu" : "Lock#Menu";
+		other.uiButtonState = menuLock ? 1 : 0;
 		other.uiTextColor = menuLock ? c_gray : c_white;
 		var lockText = menuLock ? "Menu Locked!" : "Menu Unlocked!";
 		x_gui_update_textbox(lockText);
