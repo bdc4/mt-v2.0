@@ -6,14 +6,6 @@ view_camera[0] = camera_create_view(0, 0, room_width, room_height);
 xx = camera_get_view_width(view_camera[0]);
 yy = camera_get_view_height(view_camera[0]);
 
-windowXMax = window_get_width();
-windowXMin = window_get_width()/2;
-windowYMax = window_get_height();
-windowYMin = window_get_height()/2;
-
-window_set_size(windowXMin, windowYMin);
-
-windowFS = false;
 //Init drawing areas & easing vars
 
 //Disabled

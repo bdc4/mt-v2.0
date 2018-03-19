@@ -21,6 +21,7 @@ switch (other.uiControlName) {
 	#endregion
 	break;
    
+   /*
    case "x_fullscreen":
    #region Toggle Fullscreen
 	with GUI {
@@ -35,4 +36,18 @@ switch (other.uiControlName) {
 	}
 	#endregion
 	break;
+	*/
+	case "x_close_options":
+	#region Close Options
+	x_gui_update_textbox("Options Closed!");
+	with (other.uiAnchor) {
+		showMenu = false;
+		easing[? "start"] = room_height*1/4;
+		easing[? "dest"] = -room_height*1/2;
+		easing[? "duration"] = 60;
+		easing[? "time"] = 0;
+	}
+	#endregion
+	break;
+	default: exit;
 }

@@ -8,3 +8,5 @@ if (easing[? "time"] < easing[? "duration"]) {
 	easing[? "time"]++;
 }
 #endregion
+
+var eveTrigger = showMenu ? event_user(3) : event_user(4);

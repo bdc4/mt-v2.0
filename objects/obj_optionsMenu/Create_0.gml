@@ -7,12 +7,12 @@ class = ".ignore";
 var sprPanel = ctb_load_subimage(spr_textbox_slice9_subimages, room_width*1/2, room_height*1/2);
 uiPanelSprite = sprPanel;
 sprite_index = sprPanel;
-
+showMenu = false;
 
 #region Easing
 easing = ds_map_create();
 easing[? "start"] = -room_height*1/2;
-easing[? "dest"] = room_height*1/4;
+easing[? "dest"] = -room_height*1/2;
 easing[? "duration"] = 60;
 easing[? "time"] = 0;
 #endregion
@@ -40,6 +40,7 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 		
 		btn_index = i;
 		uiEventObject = GUI;
+		
 		show_debug_message("Event Object Name: "+object_get_name(other.object_index));
 		
 		
