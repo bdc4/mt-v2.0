@@ -36,7 +36,7 @@ with lm_button[? "Lock Menu"] {
 	uiHoverColor = c_black;
 	uiEventObject = other;
 	uiControlName = "x_lock_menu";
-	class = ".top";
+	class = ".bottom";
 }
 #endregion
 
@@ -63,4 +63,7 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 		x = other.x;
 	}
 }
+
+
+
 

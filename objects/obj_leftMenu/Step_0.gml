@@ -16,12 +16,14 @@ var z = ds_map_find_first(lm_button);
 while (ds_map_find_next(lm_button, z) != undefined) {
 	with (z) {
 		switch class {
-		case ".top":
-			x = other.x+sprite_width/2;
-			break;
-		default:
-			x = other.x+8;
-			break;
+			case ".bottom":
+				x = other.x+sprite_width/2;
+				break;
+			case ".ignore":
+				continue;
+			default:
+				x = other.x+8;
+				break;
 		}
 	}
 	z = ds_map_find_next(lm_button, z);

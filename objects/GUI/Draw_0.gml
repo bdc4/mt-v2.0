@@ -17,10 +17,11 @@ if keyboard_check_pressed(vk_f4)
 #endregion
 
 
-
+/*
 #region Rightbox Easing
 if (rb_easing[? "time"] < rb_easing[? "duration"]) {
 	rightboxArea[0] = ease_out_back(rb_easing[? "time"],rb_easing[? "start"],rb_easing[? "dest"]-rb_easing[? "start"],rb_easing[? "duration"]);
 	rb_easing[? "time"]++;
 }
 #endregion
+*/

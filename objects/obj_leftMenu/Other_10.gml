@@ -9,6 +9,20 @@ switch (other.uiControlName) {
 		x_gui_update_textbox(lockText);
 		break;
 	case "x_save_game": x_gui_update_textbox("Game Saved!"); break;
-	case "x_options": x_gui_update_textbox("Options selected!"); break;
+	
+	case "x_quit": {
+		quitDiag = instance_create_layer(room_width/2 ,room_height/2, GUI.GUI_FRONT, ui_dialog);
+		with quitDiag {
+			x_gui_confirm_popup("Quit Game", "#Are you sure you want to quit?", GUI, "x_quit_game");
+		}
+	}
+	
+	case "x_options":
+	
+		
+	
+		 break;
+	
 	default: exit;
 }
+
