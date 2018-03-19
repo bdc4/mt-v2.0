@@ -19,7 +19,7 @@ easing[? "time"] = 0;
 	
 op_button = ds_map_create();
 	
-var btnLabels = ["Music", "SFX", "Fullscreen", "Close Options"];
+var btnLabels = ["Music", "SFX", "Mute All", "Close Options"];
 var btnTypes = [ui_slider, ui_slider, ui_toggle, ui_button];
 
 for (var i=0; i < array_length_1d(btnLabels); i++) {
@@ -32,7 +32,7 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 	with (op_button[? label]) {
 		uiAnchor = other;
 			
-		var textLabel = string_replace(label," ","#");
+		var textLabel = string_replace(label," "," ");
 		
 		var controlLabel = "x_"+string_lower(string_replace(label," ","_"));
 		show_debug_message("Event Control Name: "+controlLabel);
@@ -45,15 +45,18 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 		
 		
 		#region Add Labels
-		var _label = instance_create_layer(x+uiSetWidth*0,y-uiSetHeight,layer,ui_label);	
-		with _label {
-			uiAlign = fa_middle;
-			uiAlignV = (other.object_index == ui_toggle ? fa_center : fa_top);
-			uiTextValue = textLabel;
-			uiTextColor = c_white;
-			uiAnchor = other.uiAnchor;
+		if object_index != ui_button {
+			var _label = instance_create_layer(x+uiSetWidth*0,y-uiSetHeight,layer,ui_label);	
+			with _label {
+				uiAlign = fa_center;
+				uiAlignV = (other.object_index == ui_toggle ? fa_middle : fa_top);
+				uiTextValue = textLabel;
+				uiTextColor = c_white;
+				uiAnchor = other.uiAnchor;
+			}
 		}
 		#endregion
+		
 		#region Slider Setup
 		if object_index == ui_slider {
 			var _level = instance_create_layer(x+uiSetWidth+12,y,layer,ui_label);
@@ -64,13 +67,27 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 			uiMax=100;
 			uiValue = uiMax; //TODO: Import from previous session
 			uiInterval=1;
+			uiSliderUnits = "%";
+		}
+		#endregion
+		muteAll = false; //TODO: Import from previous session
+		if object_index == ui_toggle {uiToggleOn = muteAll}
+		
+		#region Close Options Button
+		if object_index == ui_button {
+			uiBackColor = c_white;
+			uiDrawOutline = false;
+			uiDrawBackColor = true;
+			uiTextValue = textLabel;
+			uiTextColor = c_black;
+			uiAlign = fa_center;
+			uiDrawSquare = true;
+			uiSetWidth = string_width(textLabel)*1.5;
+			uiSetHeight = string_height(textLabel)*1.5;
 		}
 		#endregion
 		
-		if object_index == ui_toggle {uiToggleOn = window_get_fullscreen();}
-		
-		
-		x = other.x;
+		//x = other.x;
 	}
 }
 

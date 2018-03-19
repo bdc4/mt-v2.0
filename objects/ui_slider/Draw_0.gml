@@ -80,7 +80,7 @@ if uiSlideSprite== -1
 if uiUpdateLabel != noone  //if updatelabel is set...
    {
      if instance_exists(uiUpdateLabel) then
-        { upst= string(uiValue);
+        { upst= string(uiValue)+uiSliderUnits;
           with (uiUpdateLabel) { uiTextValue = upst; }     
         }  
    }      

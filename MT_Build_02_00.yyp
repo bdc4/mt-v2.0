@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "2e387b1d-148d-4304-9998-8443e47c556f",
+            "Value": {
+                "id": "7a98f401-eb63-44b3-a396-5e42d4e7d999",
+                "resourcePath": "objects\\AUD\\AUD.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "341e2e28-2525-4713-958c-e08adc399429",
             "Value": {
                 "id": "b12e12e2-e05a-4085-a66a-2a2129fafab1",
@@ -996,6 +1004,14 @@
                 "id": "0321fe85-e2e8-4ba4-9f76-2998664db927",
                 "resourcePath": "views\\a110a906-ff52-4b94-807d-39ae336b8dbf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a1b9bd40-ef37-485f-a0b7-93c58d315c12",
+            "Value": {
+                "id": "1df17c16-245d-4679-bb15-bcb6e2446128",
+                "resourcePath": "sounds\\msc_hub_theme\\msc_hub_theme.yy",
+                "resourceType": "GMSound"
             }
         },
         {
