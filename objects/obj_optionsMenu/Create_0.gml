@@ -53,7 +53,10 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 			uiUpdateLabel = _level;
 			uiMin=0;
 			uiMax=100;
-			uiValue = uiMax; //TODO: Import from previous session
+			if label == "Music"
+				uiValue = !is_undefined(GUI.MUSIC_VOL) ? GUI.MUSIC_VOL : uiMax; //TODO: Import from previous session
+			if label == "SFX"
+				uiValue = !is_undefined(GUI.SFX_VOL) ? GUI.SFX_VOL : uiMax; //TODO: Import from previous session
 			uiInterval=1;
 			uiSliderUnits = "%";
 		}
@@ -72,7 +75,7 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 		}
 		#endregion
 		
-		muteAll = false; //TODO: Import from previous session
+		muteAll = !is_undefined(GUI.MUTE_ALL) ? GUI.MUTE_ALL : false; //TODO: Import from previous session
 		fontLarge = false; //TODO: Import from previous session
 		if label == "Mute All" {uiToggleOn = muteAll;}
 		if label == "Large Font" {uiToggleOn = fontLarge;}

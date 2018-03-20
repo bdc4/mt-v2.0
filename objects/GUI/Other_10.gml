@@ -33,15 +33,18 @@ switch (other.uiControlName) {
 			audio_group_set_gain(audiogroup_music, obj_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
 			other.muteAll = false;
 		}
+		GUI.MUTE_ALL = other.muteAll;
 	break;
 	
 	case "x_music":
 		audio_group_set_gain(audiogroup_music, obj_optionsMenu.op_button[? "Music"].uiValue/100, 1);
+		GUI.MUSIC_VOL = obj_optionsMenu.op_button[? "Music"].uiValue;
 	break;
 	
 	case "x_sfx":
 		audio_group_set_gain(audiogroup_sfx, obj_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
 		if mouse_check_button_released(mb_left) {audio_play_sound(snd_gun,100,false);}
+		GUI.SFX_VOL = obj_optionsMenu.op_button[? "SFX"].uiValue;
 	break;
 	
 	case "x_large_font":

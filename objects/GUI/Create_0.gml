@@ -1,6 +1,14 @@
 /// @description Insert description here
 // Init Main Camera
 
+ini_open("config.ini");
+MUSIC_VOL = ini_read_real("Options", "MUSIC_VOL", 100);
+SFX_VOL = ini_read_real("Options", "SFX_VOL", 100);
+MUTE_ALL =  ini_read_real("Options", "MUTE_ALL", false);
+ini_close();
+
+show_debug_message("Vals (MUSIC, SFX, MUTE): "+string(MUSIC_VOL)+" "+string(SFX_VOL)+" "+string(MUTE_ALL))
+
 //Helpful vars
 view_camera[0] = camera_create_view(0, 0, room_width, room_height);
 xx = camera_get_view_width(view_camera[0]);
