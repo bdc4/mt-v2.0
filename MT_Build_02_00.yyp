@@ -1303,6 +1303,14 @@
             }
         },
         {
+            "Key": "ded959d8-fa34-4dd1-bc6c-44bac23a52b0",
+            "Value": {
+                "id": "729c56d0-0231-4b44-9ea7-5e8cd42f0185",
+                "resourcePath": "fonts\\f_large\\f_large.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "e2278e6c-e610-4d49-9bdb-877792171ee9",
             "Value": {
                 "id": "dbc21691-6107-43f1-a5ae-8a39e946aa8b",

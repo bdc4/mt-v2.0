@@ -35,8 +35,8 @@ ctb_add_color( "yellow", c_yellow );
 ctb_add_color( "red", c_red );
 
 // Add some fonts
-ctb_add_font( "default", f_normal );
-ctb_add_font( "normal", f_normal );
+ctb_add_font( "default", GUI.tbFont );
+ctb_add_font( "normal", GUI.tbFont );
 ctb_add_font( "other", f_other );
 
 // Add a sound

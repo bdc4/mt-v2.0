@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 switch (other.uiControlName) {
+	
 	case "x_quit_game":
 		#region Quit Game Prompt
 		{
@@ -42,7 +43,20 @@ switch (other.uiControlName) {
 		audio_group_set_gain(audiogroup_sfx, obj_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
 		if mouse_check_button_released(mb_left) {audio_play_sound(snd_gun,100,false);}
 	break;
-		
+	
+	case "x_large_font":
+		other.fontLarge = !other.fontLarge;
+		var bool = other.fontLarge;
+		GUI.fontLarge = bool;
+		GUI.tbFont = GUI.fonts[bool];
+		with (ui_defaults) {
+			uiFont = GUI.tbFont;
+			var wScale = [180,360];
+			var hScale = [30,60];
+			uiSetWidth = wScale[GUI.fontLarge];
+			uiSetHeight = hScale[GUI.fontLarge];
+		}
+	break;
 	
 	case "x_close_options":
 		#region Close Options
@@ -53,6 +67,7 @@ switch (other.uiControlName) {
 			easing[? "dest"] = -room_height*1/2;
 			easing[? "duration"] = 60;
 			easing[? "time"] = 0;
+			event_user(4);
 		}
 		#endregion
 	break;

@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
-//var rot = (menuOpen ? 1 : -1);
-//var col = point_in_rectangle(mouse_x,mouse_y, x+8, y+8, x+32, y+32) ? c_white : c_red;
-//draw_set_color(col);
-//draw_rectangle(x+32, y+32, x+8, y+8, true);
-//draw_text(x+14, y+8, "X");
-//draw_sprite_ext(spr_ico_continue,0,x+sprite_width+sprite_get_width(spr_ico_continue)*rot,y+sprite_height/2,1,rot,-90,c_white,1);
+event_inherited();
+draw_sprite(ctb_load_subimage( spr_textbox_slice9_subimages, 40, room_height*1/4),0,x+room_width*1/12+4,room_height*1/4+room_height*1/8)
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text_transformed(x+room_width*1/12+24,room_height*1/4+room_height*1/8+room_height*1/8,"M\nE\nN\nU",1,1,0);
+
+//draw_set_color(c_red);
+//draw_rectangle(x+room_width*1/12, room_height*1/4+room_height*1/8, x+room_width*1/12+32, room_height*3/4-room_height*1/8,false);
+//draw_set_color(c_black);
+//draw_rectangle(x+room_width*1/12, room_height*1/4+room_height*1/8, x+room_width*1/12+32, room_height*3/4-room_height*1/8,true);

@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
+
 switch (other.uiControlName) {
 	
 	case "x_lock_menu": 
@@ -25,6 +27,7 @@ switch (other.uiControlName) {
 	case "x_options":
 		with (obj_optionsMenu) {
 			if !showMenu {showMenu = true;} else continue;
+			event_user(3);
 			x_gui_update_textbox("Menu Opened!");
 			easing[? "start"] = -room_height*1/2;
 			easing[? "dest"] = room_height*1/4;
