@@ -56,7 +56,7 @@ if( current_message != noone ) {
             }
         }
     }
-    else if( icon_finished != noone ) {
+    else if( icon_finished != noone ) and object_index == obj_textbox {
         draw_sprite( icon_finished, icon_frame, x+sprite_width-sprite_get_width( icon_finished )-padding_right, y+sprite_height-sprite_get_height( icon_finished )-padding_bottom );
     }
     

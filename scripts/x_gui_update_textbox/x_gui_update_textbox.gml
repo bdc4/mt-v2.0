@@ -9,7 +9,7 @@ var fadeVal = tb.fadeOut;
 tb.msg = msg;	
 	
 with tb {
-	event_perform(ev_create, 0);
+	//event_perform(ev_create, 0);
 	ctb_add_text(msg);
 	
 	if fadeVal {

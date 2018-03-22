@@ -9,7 +9,8 @@
         "9980392d-1dd6-49bd-a732-2d1d538a9323",
         "36192b3e-48ca-4078-bc4d-6c41ecd6093a",
         "078c964b-5f26-416b-af54-20b988fc26e4",
-        "73e720fa-5671-4da6-bdcd-a5fabf5d9a55"
+        "73e720fa-5671-4da6-bdcd-a5fabf5d9a55",
+        "28c23eb2-b632-4a1b-8341-08f812b2ca4e"
     ],
     "filterType": "GMScript",
     "folderName": "CTB - Ced's Textbox",

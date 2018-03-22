@@ -33,6 +33,8 @@ switch (other.uiControlName) {
 			audio_group_set_gain(audiogroup_music, obj_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
 			other.muteAll = false;
 		}
+		GUI.MUSIC_VOL = obj_optionsMenu.op_button[? "Music"].uiValue;
+		GUI.SFX_VOL = obj_optionsMenu.op_button[? "SFX"].uiValue;
 		GUI.MUTE_ALL = other.muteAll;
 	break;
 	
@@ -43,7 +45,7 @@ switch (other.uiControlName) {
 	
 	case "x_sfx":
 		audio_group_set_gain(audiogroup_sfx, obj_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
-		if mouse_check_button_released(mb_left) {audio_play_sound(snd_gun,100,false);}
+		if mouse_check_button_released(mb_left) {audio_play_sound(snd_alert,100,false);}
 		GUI.SFX_VOL = obj_optionsMenu.op_button[? "SFX"].uiValue;
 	break;
 	
@@ -63,7 +65,7 @@ switch (other.uiControlName) {
 	
 	case "x_close_options":
 		#region Close Options
-		x_gui_update_textbox("Options Closed!");
+		x_gui_update_alertbox("Options Closed!");
 		with (other.uiAnchor) {
 			showMenu = false;
 			easing[? "start"] = room_height*1/4;

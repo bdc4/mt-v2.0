@@ -13,7 +13,7 @@ switch (other.uiControlName) {
 	break;
 	
 	case "x_save_game":
-		x_gui_update_textbox("Game Saved!");
+		x_gui_update_alertbox("Game Saved!");
 	break;
 	
 	case "x_quit": {
@@ -28,7 +28,7 @@ switch (other.uiControlName) {
 		with (obj_optionsMenu) {
 			if !showMenu {showMenu = true;} else continue;
 			event_user(3);
-			x_gui_update_textbox("Menu Opened!");
+			x_gui_update_alertbox("Menu Opened!");
 			easing[? "start"] = -room_height*1/2;
 			easing[? "dest"] = room_height*1/4;
 			easing[? "duration"] = 60;
