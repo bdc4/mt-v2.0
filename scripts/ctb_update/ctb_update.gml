@@ -20,7 +20,7 @@
 */
 if( !visible ) exit;
 var inArea = point_in_rectangle(mouse_x,mouse_y,0,room_height-sprite_height/4,sprite_width,room_height);
-var skip = keyboard_check_pressed(CTB_SkipKey) or (mouse_check_button_pressed(mb_left) and point_in_rectangle(mouse_x,mouse_y,x,y,x+sprite_width,y+sprite_height) and object_index == obj_textbox);
+var skip = keyboard_check_pressed(CTB_SkipKey) or ((mouse_check_button_pressed(mb_left) and point_in_rectangle(mouse_x,mouse_y,x,y,x+sprite_width,y+sprite_height) and object_index == obj_textbox));
 
 if( !pause ) {
 
@@ -40,21 +40,26 @@ if( !pause ) {
         
         if( current_word < ds_list_size( current_message ) ) {
             var me = current_message[| current_word];
+			
             if( me[0] == "word" ) {
                 if( current_pos < string_length( me[5] ) && me[5] != " " ) {
                     current_pos += text_speed;
                     if( floor( current_pos+1 ) <= string_length( me[5] ) ) {
                         if( string_copy( me[5],floor( current_pos ),2 ) == "\\#" ) current_pos++;
-                    }
+					}
+					
                 }
                 else {
+					if (me[5] != "." and me[5] != " ") audio_play_sound(snd_talk_system,100,false);
                     current_word++;
+					
                     while( current_word < ds_list_size( current_message ) ) {
                         current_pos = 1;
                         me = current_message[| current_word];
                         
                         if( me[0] == "word" ) break;
                         else {
+							
                             if( ds_map_exists( CTB_Commands, me[0] ) ) {
                                 var scr = CTB_Commands[? me[0]];
                                 if( script_exists( scr ) ) script_execute( scr, me[1] );
@@ -119,7 +124,7 @@ if( !pause ) {
                     }
                 }
             }
-            else if( skip ) {
+            else if( skip and !inArea) {
                 //if( ds_queue_empty( messages ) ) instance_destroy();
                 //else
                 {
@@ -129,7 +134,7 @@ if( !pause ) {
                 }
             }
         }
-        else if( skip )
+        else if( skip and !inArea)
         {
             while( current_word < ds_list_size( current_message ) ) {
                 me = current_message[| current_word];

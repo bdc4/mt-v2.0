@@ -54,7 +54,7 @@ messages = ds_queue_create();       // All the messages, in order
 current_message = noone;            // The current message to show
 current_word = 0;                   // The current word we are at ( used for tag system )
 current_pos = 1;                    // The current position in the word we are at
-text_speed = .5;                     // The number of character per steps ( default 1 )
+text_speed = 1;                     // The number of character per steps ( default 1 )
 line_sep = 0;                       // Distance between 2 lines
 tag_on = true;                      // Used in parsing to activate and deactivate tags.
 

@@ -69,5 +69,5 @@ if !file_exists("config.ini") {
 	x_gui_update_textbox("Open 'Options' and play with the levels. You can even choose to mute all sound! When you're done. Go ahead and restart the game. You'll notice that it loads up with the options you had previously set!");
 	x_gui_update_textbox("(I'll also remember that you've read all this before!)");
 } else {
-	x_gui_update_textbox("Hey![pause:30] Your game file looks like you've been here before[speed:.05]...[speed:1][pause:30] Welcome back!");	
+	x_gui_update_textbox("Hey![pause:30] Your game file looks like you've been here before[pause:30].[pause:30].[pause:30].[pause:30] Welcome back!");	
 }

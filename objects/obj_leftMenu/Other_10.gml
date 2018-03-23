@@ -9,7 +9,7 @@ switch (other.uiControlName) {
 		other.uiButtonState = menuLock ? 1 : 0;
 		other.uiTextColor = menuLock ? c_gray : c_white;
 		var lockText = menuLock ? "Menu Locked!" : "Menu Unlocked!";
-		x_gui_update_textbox(lockText);
+		x_gui_update_alertbox(lockText);
 	break;
 	
 	case "x_save_game":

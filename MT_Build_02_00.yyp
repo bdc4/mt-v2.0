@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "4e885902-49bf-4635-b48d-9f1feddf3a99",
+            "Value": {
+                "id": "3edb24ab-0ef5-4c34-a7a2-77cc5ebc9627",
+                "resourcePath": "sounds\\snd_talk_system\\snd_talk_system.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4f57a847-01ba-4a59-bb18-f2a926f67405",
             "Value": {
                 "id": "20de20d8-974e-40b0-8772-5e77817d4567",
