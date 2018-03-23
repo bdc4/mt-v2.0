@@ -50,7 +50,7 @@ if( !pause ) {
 					
                 }
                 else {
-					if (me[5] != "." and me[5] != " ") audio_play_sound(snd_talk_system,100,false);
+					if (me[5] != "." and me[5] != " " and object_index == obj_textbox) audio_play_sound(snd_talk_system,100,false);
                     current_word++;
 					
                     while( current_word < ds_list_size( current_message ) ) {
