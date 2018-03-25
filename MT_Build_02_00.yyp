@@ -1010,7 +1010,7 @@
             "Key": "9f7be9b5-6db2-47bc-a1ac-d05263ff7818",
             "Value": {
                 "id": "ea6fdaa1-28b1-4f03-abc4-82b703110706",
-                "resourcePath": "sounds\\snd_gun\\snd_gun.yy",
+                "resourcePath": "sounds\\snd_gun_old\\snd_gun_old.yy",
                 "resourceType": "GMSound"
             }
         },
