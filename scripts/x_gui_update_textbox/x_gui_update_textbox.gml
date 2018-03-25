@@ -1,4 +1,4 @@
-var msg = argument0;
+var msg = argument[0];
 
 //if instance_exists(obj_textbox) {
 //	instance_destroy(obj_textbox);
@@ -15,7 +15,9 @@ var fadeVal = tb.fadeOut;
 tb.msg = msg;	
 	
 with tb {
-	//event_perform(ev_create, 0);
+	if argument_count > 1 {
+		if (argument[1] == true) event_perform(ev_create,0);
+	}
 	ctb_add_text(msg);
 	
 	if fadeVal {

@@ -36,6 +36,26 @@ switch (other.uiControlName) {
 		}
 	break;
 	
+	case "x_test_event":
+		//Creates a random pop-up from the hard-coded data in the event controller object
+		var rand = irandom_range(0, ds_map_size(EVENTS));
+		rand = obj_eventController.eveNameList[rand];
+		var event = EVENTS[? rand];
+		//TODO: Add more events and trigger them from an in-game action
+		
+		x_gui_update_textbox("A random event has been triggered!", true);
+		
+		EVENT_NAME = event[? "name"];
+		EVENT_ACTIONS = event[? "actions"];
+		
+		instance_create_layer(room_width,64,GUI.GUI_MID,obj_eventWindow);
+		with (obj_eventWindow) {
+			if !showMenu {showMenu = true;} else continue;
+			event_user(3);
+			x_gui_update_alertbox("Event triggered!");
+			
+		}
+	
 	default: exit;
 }
 
