@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "68e07960-dcc9-4fd5-9734-b25868a7e2dc",
+            "Value": {
+                "id": "10e99cea-f66b-482c-bad5-aa131c01f713",
+                "resourcePath": "views\\68e07960-dcc9-4fd5-9734-b25868a7e2dc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6a4923f1-a9e7-431a-b820-cf6b0a048ee9",
             "Value": {
                 "id": "c36edf3c-aea6-47cd-8e27-a1140a1a6930",
@@ -908,6 +916,14 @@
                 "id": "4d45705c-5d9c-4eed-bc07-ae011455d1c9",
                 "resourcePath": "extensions\\GUI_Widgets_Library_PRO\\GUI_Widgets_Library_PRO.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "8e6d014b-bff6-4ac4-9e8c-9ea3dbfe870e",
+            "Value": {
+                "id": "ab652276-e9a5-432f-adda-caa216bdab9e",
+                "resourcePath": "views\\8e6d014b-bff6-4ac4-9e8c-9ea3dbfe870e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1388,6 +1404,14 @@
                 "id": "4d34c9ad-0d39-44dc-b8dd-effaf362d88d",
                 "resourcePath": "views\\e3ff1cdb-fb35-4ea3-b4ec-5311c16aee73.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e6d83e19-7c1f-4dbe-856e-ecd29806a377",
+            "Value": {
+                "id": "7b30b714-313a-4d93-9864-96842bd86e9e",
+                "resourcePath": "sounds\\sound4\\sound4.yy",
+                "resourceType": "GMSound"
             }
         },
         {
