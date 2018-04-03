@@ -38,15 +38,20 @@ switch (other.uiControlName) {
 	
 	case "x_test_event":
 		//Creates a random pop-up from the hard-coded data in the event controller object
-		var rand = irandom_range(0, ds_map_size(EVENTS));
-		rand = obj_eventController.eveNameList[rand];
-		var event = EVENTS[? rand];
-		//TODO: Add more events and trigger them from an in-game action
 		
-		x_gui_update_textbox("A random event has been triggered!", true);
+		var event = x_eve_get("MEETINGS", "Space Pirates!");
+		
+		show_debug_message("Event out: "+string(event));
+		//TODO: Add more events and trigger them from an in-game action
 		
 		EVENT_NAME = event[? "name"];
 		EVENT_ACTIONS = event[? "actions"];
+		EVENT_TEXT = event[? "text"];
+				
+		x_gui_update_textbox(EVENT_TEXT, true);
+
+		
+		show_debug_message("EVENT ACTIONS type: "+typeof(EVENT_ACTIONS));
 		
 		instance_create_layer(room_width,64,GUI.GUI_MID,obj_eventWindow);
 		with (obj_eventWindow) {

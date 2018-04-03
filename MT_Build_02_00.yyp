@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "48e61f26-c4a4-4367-a2d9-d3cfc59bb340",
+            "Value": {
+                "id": "30cb1824-b206-4a41-8d9b-7427a01b3226",
+                "resourcePath": "datafiles_yy\\events.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "48eaee11-128b-4906-ac85-fe81f3dd8786",
             "Value": {
                 "id": "72397a29-bb61-40b4-bcdb-a26b01d37e0d",
@@ -1143,6 +1151,14 @@
             }
         },
         {
+            "Key": "b288e144-d314-476c-b7ba-b77b00dc6593",
+            "Value": {
+                "id": "e54ee8de-5072-41f5-bf96-ff94d42d43f4",
+                "resourcePath": "scripts\\x_eve_get\\x_eve_get.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b4bbdcfe-effa-4a40-a4a6-5482f567a6de",
             "Value": {
                 "id": "96b1fb4c-405c-40c8-829d-a6186afbc2aa",
@@ -1597,7 +1613,8 @@
         "2e0c9383-ddc3-4017-be7d-43178fbec24b",
         "6be2238e-f948-49b4-be54-2a5dd1aad952",
         "fc0096e3-5b7c-416d-88cf-135fb414102d",
-        "28c23eb2-b632-4a1b-8341-08f812b2ca4e"
+        "28c23eb2-b632-4a1b-8341-08f812b2ca4e",
+        "b288e144-d314-476c-b7ba-b77b00dc6593"
     ],
     "tutorial": ""
 }

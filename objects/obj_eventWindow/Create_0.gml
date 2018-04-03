@@ -24,15 +24,15 @@ eventName = EVENT_NAME;
 
 with titleLabel {uiSetWidth = 200; uiAlign = fa_center; uiTextValue = other.eventName; uiAnchor=other; uiTextColor = c_white;}
 
-for (var i = 0; i < array_length_1d(EVENT_ACTIONS); i++) {
+for (var i = 0; i < ds_list_size(EVENT_ACTIONS); i++) {
 	
 	btnList[i] = instance_create_layer(x+32+180*(i),y+sprite_height-60,layer,ui_button_ani);
 	
 	with btnList[i] {
 		uiAnchor = other;
-		uiTextValue = EVENT_ACTIONS[i];
+		uiTextValue = EVENT_ACTIONS[|i];
 		uiEventObject = obj_eventController;
-		uiControlName = EVENT_ACTIONS[i];
+		uiControlName = EVENT_ACTIONS[|i];
 	}
 	
 }

@@ -1,0 +1,137 @@
+[
+  {
+    "table_name": "EVENTS",
+    "events": [
+      {
+        "name": "Space Debris",
+        "text": "Space Debris floats by the ship.",
+        "actions": [
+          "OK"
+        ]
+      },
+      {
+        "name": "Abandoned Spacecraft",
+        "text": "An abandoned-looking ship floats derelict off in the distance.",
+        "actions": [
+          "Ignore",
+          "Investigate"
+        ]
+      },
+      {
+        "name": "Comet",
+        "text": "A beautiful comet streams by the ship.",
+        "actions": [
+          "OK"
+        ]
+      },
+      {
+        "name": "Asteroid",
+        "text": "A hefty asteroid hurls towards the ship!",
+        "actions": [
+          "OK"
+        ]
+      },
+      {
+        "name": "Space Pirates!",
+        "text": "A hostile band is hailing you.",
+        "actions": [
+          "Attack",
+          "Run",
+          "Talk"
+        ]
+      },
+      {
+        "name": "Surveyor Encounter",
+        "text": "A friendly merchant is hailing your ship.",
+        "actions": [
+          "Talk",
+          "Ignore"
+        ]
+      }
+    ]
+  },
+  {
+    "table_name": "MEETINGS",
+    "events": [
+      {
+        "name": "Space Pirates!",
+        "text": "A hostile band is hailing you.",
+        "actions": [
+          "Attack",
+          "Run",
+          "Talk"
+        ]
+      },
+      {
+        "name": "Crew Development",
+        "text": "Random crew member gives mission/asks for advice. If answered correctly, boosts morale of crew member.",
+        "actions": [
+          "OK"
+        ]
+      },
+      {
+        "name": "Surveyor Encounter",
+        "text": "",
+        "actions": [
+          "Talk",
+          "Ignore"
+        ]
+      },
+      {
+        "name": "Surveyor Encounter",
+        "text": "A friendly merchant is hailing your ship.",
+        "actions": [
+          "Ignore",
+          "Investigate"
+        ]
+      },
+      {
+        "name": "Distress Beacon",
+        "text": "A ship is reaching out for aid! But... It could be a trap...",
+        "actions": []
+      },
+      {
+        "name": "Distress Beacon",
+        "text": "A ship is reaching out for aid! But... It could be a trap...",
+        "actions": [
+          "Attack"
+        ]
+      }
+    ]
+  },
+  {
+    "table_name": "INJURY_MINOR",
+    "events": [
+      {
+        "name": "Minor whiplash",
+        "text": "A crew member has suffered minor whiplash.",
+        "actions": []
+      },
+      {
+        "name": "Nausea",
+        "text": "A crew member is feeling nauseous.",
+        "actions": []
+      },
+      {
+        "name": "Stir Crazy",
+        "text": "The confined lifestyle of the ship is starting to affect a crew member.",
+        "actions": []
+      },
+      {
+        "name": "Minor Cuts and Bruises",
+        "text": "A crew member has been injured.",
+        "actions": []
+      },
+      {
+        "name": "Twisted Ankle",
+        "text": "Ouch. That's gotta hurt.",
+        "actions": []
+      },
+      {
+        "name": "Minor Radiation Poisoning",
+        "text": "A crew member has developed some radiation poisoning.",
+        "actions": []
+      }
+    ]
+  }
+]
