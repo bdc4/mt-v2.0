@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "717f29c0-8944-4617-a085-029b9d4df48f",
+            "Value": {
+                "id": "3f648ca2-0b67-4273-b91b-98b782b1bdd9",
+                "resourcePath": "scripts\\x_eve_get_random\\x_eve_get_random.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "72ab672a-58e9-4123-961d-7ee327994de3",
             "Value": {
                 "id": "514c87f9-3191-497c-9230-9cbf6079228c",
@@ -1750,7 +1758,8 @@
         "6be2238e-f948-49b4-be54-2a5dd1aad952",
         "fc0096e3-5b7c-416d-88cf-135fb414102d",
         "28c23eb2-b632-4a1b-8341-08f812b2ca4e",
-        "b288e144-d314-476c-b7ba-b77b00dc6593"
+        "b288e144-d314-476c-b7ba-b77b00dc6593",
+        "717f29c0-8944-4617-a085-029b9d4df48f"
     ],
     "tutorial": ""
 }

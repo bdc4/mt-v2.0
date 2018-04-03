@@ -5,7 +5,7 @@ audio_group_load(audiogroup_sfx);
 
 music_playing = msc_hub_theme;
 music = [msc_hub_theme];
-sfx = [snd_gun];
+sfx = [snd_talk_system];
 
 music_volume = 1;
 sfx_volume = 1;

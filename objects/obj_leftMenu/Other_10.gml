@@ -39,7 +39,7 @@ switch (other.uiControlName) {
 	case "x_test_event":
 		//Creates a random pop-up from the hard-coded data in the event controller object
 		
-		var event = x_eve_get("MEETINGS", "Space Pirates!");
+		var event = x_eve_get_random("MEETINGS");
 		
 		show_debug_message("Event out: "+string(event));
 		//TODO: Add more events and trigger them from an in-game action

@@ -5,7 +5,7 @@ event_inherited();
 
 switch (other.uiControlName) {
 	
-	case "Fight":
+	case "Fight": case "Attack":
 	x_gui_update_textbox("Battle Initiated!", true);
 	with other.uiAnchor {
 		event_user(4);
@@ -38,7 +38,7 @@ switch (other.uiControlName) {
 	}
 	break;
 	
-	case "OK":
+	case "Ignore": case "OK":
 	x_gui_update_textbox("Job Done", true);
 	with other.uiAnchor {
 		event_user(4);

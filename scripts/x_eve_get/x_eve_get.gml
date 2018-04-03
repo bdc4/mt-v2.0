@@ -3,12 +3,6 @@
 /// @param  table
 /// @param  event
 
-var meetings = EVENTS_TABLE[? "MEETINGS"];
-var test_event = meetings[? "events"];
-test_event = test_event[| 0];
-test_event = test_event[? "name"];
-
-
 var table = EVENTS_TABLE[? argument0];
 var events = table[? "events"];
 for (var i=0; i<ds_list_size(events); i++) {

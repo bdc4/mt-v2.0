@@ -71,7 +71,7 @@
       },
       {
         "name": "Surveyor Encounter",
-        "text": "",
+        "text": "A friendly merchant is hailing your ship.",
         "actions": [
           "Talk",
           "Ignore"
@@ -88,13 +88,17 @@
       {
         "name": "Distress Beacon",
         "text": "A ship is reaching out for aid! But... It could be a trap...",
-        "actions": []
+        "actions": [
+          "Ignore",
+          "Investigate"
+        ]
       },
       {
         "name": "Distress Beacon",
         "text": "A ship is reaching out for aid! But... It could be a trap...",
         "actions": [
-          "Attack"
+          "Ignore",
+          "Investigate"
         ]
       }
     ]
@@ -105,32 +109,44 @@
       {
         "name": "Minor whiplash",
         "text": "A crew member has suffered minor whiplash.",
-        "actions": []
+        "actions": [
+          "OK"
+        ]
       },
       {
         "name": "Nausea",
         "text": "A crew member is feeling nauseous.",
-        "actions": []
+        "actions": [
+          "OK"
+        ]
       },
       {
         "name": "Stir Crazy",
         "text": "The confined lifestyle of the ship is starting to affect a crew member.",
-        "actions": []
+        "actions": [
+          "OK"
+        ]
       },
       {
         "name": "Minor Cuts and Bruises",
         "text": "A crew member has been injured.",
-        "actions": []
+        "actions": [
+          "OK"
+        ]
       },
       {
         "name": "Twisted Ankle",
         "text": "Ouch. That's gotta hurt.",
-        "actions": []
+        "actions": [
+          "OK"
+        ]
       },
       {
         "name": "Minor Radiation Poisoning",
         "text": "A crew member has developed some radiation poisoning.",
-        "actions": []
+        "actions": [
+          "OK"
+        ]
       }
     ]
   }

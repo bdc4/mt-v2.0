@@ -37,7 +37,7 @@ ctb_add_font( "normal", GUI.tbFont );
 ctb_add_font( "other", f_other );
 
 // Add a sound
-ctb_add_sound( "gun", snd_gun );
+//ctb_add_sound( "gun", snd_gun );
 
 // Add a custom command to change character image!
 char_sprite = spr_char;
