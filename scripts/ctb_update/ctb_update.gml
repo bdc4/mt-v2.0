@@ -18,7 +18,7 @@
           If you want to hide the textbox, make it invisible.
           You can make it resume by making it visible again.
 */
-if( !visible ) exit;
+//if( !visible ) exit;
 
 var inArea = point_in_rectangle(mouse_x,mouse_y,0,room_height-sprite_height/4,sprite_width,room_height);
 var skip = keyboard_check_pressed(CTB_SkipKey) or ((mouse_check_button_pressed(mb_left) and point_in_rectangle(mouse_x,mouse_y,x,y,x+sprite_width,y+sprite_height) and object_index == obj_textbox));

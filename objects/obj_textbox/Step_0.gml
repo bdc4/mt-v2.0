@@ -10,10 +10,6 @@ if (tb_easing[? "time"] < tb_easing[? "duration"]) {
 x = textboxArea[0];
 y = textboxArea[1];
 
-/*
-if (fadeOut and y > room_height) {
-	instance_destroy();	
-}
-*/
+visible = y < yy;
 
 

@@ -7,7 +7,7 @@
 xx = camera_get_view_width(view_camera[0]);
 yy = camera_get_view_height(view_camera[0]);
 
-textboxArea = [0,yy*13/16,xx,yy];
+textboxArea = [0,yy*13/16,xx,yy+1];
 tb_easing = ds_map_create();
 //tb_easing[? "start"] = textboxArea[3]-1;
 //tb_easing[? "dest"] = yy*13/16;

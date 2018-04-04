@@ -16,6 +16,7 @@ lb_easing[? "time"] = 0;
 #endregion
 
 var panelSpr = ctb_load_subimage( spr_textbox_slice9_subimages, room_width*1/12, room_height/2);
+panelTab = ctb_load_subimage( spr_textbox_slice9_subimages, 40, room_height*1/4);
 uiPanelSprite = panelSpr;
 sprite_index = panelSpr;
 
