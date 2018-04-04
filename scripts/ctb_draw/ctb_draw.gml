@@ -14,9 +14,7 @@
     This script will draw the textbox at the current x,y position.
     Simply call this script in the draw event of your textbox object.
 */
-draw_self();
-draw_set_valign(fa_top);
-draw_set_halign(fa_left);
+draw_self(); draw_set_valign(fa_top); draw_set_halign(fa_left);
 
 if( current_message != noone ) {
 
@@ -56,7 +54,7 @@ if( current_message != noone ) {
             }
         }
     }
-    else if( icon_finished != noone ) and object_index == obj_textbox {
+    else if( icon_finished != noone ) {
         draw_sprite( icon_finished, icon_frame, x+sprite_width-sprite_get_width( icon_finished )-padding_right, y+sprite_height-sprite_get_height( icon_finished )-padding_bottom );
     }
     

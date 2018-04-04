@@ -1,5 +1,5 @@
 {
-    "id": "6ac2c8f6-ba5a-43b5-98f8-db5a91b21d8c",
+    "id": "f96f9d28-7305-4677-a427-0cc0e2d766cc",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "ctb_draw",
