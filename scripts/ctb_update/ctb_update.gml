@@ -21,7 +21,7 @@
 if( !visible ) exit;
 if object_index == obj_textbox and tb_easing[? "time"] != tb_easing[? "duration"] exit;
 
-var skip = (mouse_check_button_pressed(mb_left) and mouse_y > y and mouse_y > yy-180) or keyboard_check_pressed(CTB_SkipKey);
+var skip = (mouse_check_button_pressed(mb_left) and mouse_y > yy-sprite_height and mouse_y < yy) or keyboard_check_pressed(CTB_SkipKey);
 
 if( !pause ) {
 
