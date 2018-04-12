@@ -490,7 +490,7 @@
             "Key": "497fc977-06e0-4c23-8247-870c293dca21",
             "Value": {
                 "id": "7ca35429-be2a-4162-aab5-f08b1f769ec5",
-                "resourcePath": "objects\\obj_eventController\\obj_eventController.yy",
+                "resourcePath": "objects\\EVENTS\\EVENTS.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1099,6 +1099,14 @@
             "Value": {
                 "id": "019e2b74-4757-4466-9341-da097d761095",
                 "resourcePath": "views\\9980392d-1dd6-49bd-a732-2d1d538a9323.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9c004001-1dd4-4aa3-a0f6-70021e1d3033",
+            "Value": {
+                "id": "723691a4-4f61-4e24-9c67-6571ae61e5f0",
+                "resourcePath": "views\\9c004001-1dd4-4aa3-a0f6-70021e1d3033.yy",
                 "resourceType": "GMFolder"
             }
         },

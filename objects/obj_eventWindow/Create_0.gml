@@ -32,7 +32,7 @@ for (var i = 0; i < ds_list_size(EVENT_ACTIONS); i++) {
 		uiAnchor = other;
 		uiSetWidth = 150;
 		uiTextValue = EVENT_ACTIONS[|i];
-		uiEventObject = obj_eventController;
+		uiEventObject = EVENTS;
 		uiControlName = EVENT_ACTIONS[|i];
 	}
 	
