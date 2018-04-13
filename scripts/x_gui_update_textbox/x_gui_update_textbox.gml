@@ -6,7 +6,7 @@ msg = string_replace_all(msg, "!", "![pause:30]");
 msg = string_replace_all(msg, ";", ";[pause:30]");
 msg = string_replace_all(msg, ",", ",[pause:30]");
 
-tb = obj_textbox;//instance_create_layer(0,room_height,GUI.GUI_MID,obj_textbox);
+tb = GUI_textbox;//instance_create_layer(0,room_height,GUI.GUI_MID,GUI_textbox);
 tb.msg = msg;	
 	
 with tb {

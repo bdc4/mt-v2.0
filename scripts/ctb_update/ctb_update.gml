@@ -19,7 +19,7 @@
           You can make it resume by making it visible again.
 */
 if( !visible ) exit;
-if object_index == obj_textbox and tb_easing[? "time"] != tb_easing[? "duration"] exit;
+if object_index == GUI_textbox and tb_easing[? "time"] != tb_easing[? "duration"] exit;
 
 var skip = (mouse_check_button_pressed(mb_left) and mouse_y > yy-sprite_height and mouse_y < yy) or keyboard_check_pressed(CTB_SkipKey);
 

@@ -538,7 +538,7 @@
             "Key": "4f57a847-01ba-4a59-bb18-f2a926f67405",
             "Value": {
                 "id": "20de20d8-974e-40b0-8772-5e77817d4567",
-                "resourcePath": "objects\\obj_optionsMenu\\obj_optionsMenu.yy",
+                "resourcePath": "objects\\GUI_optionsMenu\\GUI_optionsMenu.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -562,7 +562,7 @@
             "Key": "5037ba0e-176e-4f2a-9a7d-30497916e48d",
             "Value": {
                 "id": "fad47a93-2fe9-4987-a662-006894cc0398",
-                "resourcePath": "objects\\obj_textbox\\obj_textbox.yy",
+                "resourcePath": "objects\\GUI_textbox\\GUI_textbox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1087,14 +1087,6 @@
             }
         },
         {
-            "Key": "99180aa6-867c-4614-8b2e-1e71f4101ba9",
-            "Value": {
-                "id": "222922c1-6415-4a4c-884f-1220ee42c068",
-                "resourcePath": "objects\\obj_rightMenu\\obj_rightMenu.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "9980392d-1dd6-49bd-a732-2d1d538a9323",
             "Value": {
                 "id": "019e2b74-4757-4466-9341-da097d761095",
@@ -1130,7 +1122,7 @@
             "Key": "9e75e70d-e3d0-4f3b-bfdc-41e79a522f92",
             "Value": {
                 "id": "841584a6-752f-476f-9cfe-1db293cef413",
-                "resourcePath": "objects\\obj_leftMenu\\obj_leftMenu.yy",
+                "resourcePath": "objects\\GUI_leftMenu\\GUI_leftMenu.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1378,7 +1370,7 @@
             "Key": "c478d73b-09ca-4f39-a7ea-cd3bb59ca00b",
             "Value": {
                 "id": "69edc6f5-93f0-4698-afee-08116e446298",
-                "resourcePath": "objects\\obj_eventWindow\\obj_eventWindow.yy",
+                "resourcePath": "objects\\GUI_eventWindow\\GUI_eventWindow.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1386,7 +1378,7 @@
             "Key": "c48bbf7e-8ea7-4631-a3c3-30f3cdef480c",
             "Value": {
                 "id": "254ac9d3-63cc-46a7-a871-bf912971dd00",
-                "resourcePath": "objects\\obj_alertbox\\obj_alertbox.yy",
+                "resourcePath": "objects\\GUI_alertbox\\GUI_alertbox.yy",
                 "resourceType": "GMObject"
             }
         },

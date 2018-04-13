@@ -25,7 +25,7 @@ switch (other.uiControlName) {
 	break;
 	
 	case "x_options":
-		with (obj_optionsMenu) {
+		with (GUI_optionsMenu) {
 			if !showMenu {showMenu = true;} else continue;
 			event_user(3);
 			x_gui_update_alertbox("Menu Opened!");
@@ -53,8 +53,8 @@ switch (other.uiControlName) {
 		
 		show_debug_message("EVENT ACTIONS type: "+typeof(EVENT_ACTIONS));
 		
-		instance_create_layer(room_width,64,GUI.GUI_MID,obj_eventWindow);
-		with (obj_eventWindow) {
+		instance_create_layer(room_width,64,GUI.GUI_MID,GUI_eventWindow);
+		with (GUI_eventWindow) {
 			if !showMenu {showMenu = true;} else continue;
 			event_user(3);
 			x_gui_update_alertbox("Event triggered!");

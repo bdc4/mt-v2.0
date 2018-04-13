@@ -29,31 +29,31 @@ switch (other.uiControlName) {
 			other.muteAll = true;
 		}
 		else {
-			audio_group_set_gain(audiogroup_music, obj_optionsMenu.op_button[? "Music"].uiValue/100, 1);
-			audio_group_set_gain(audiogroup_music, obj_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
+			audio_group_set_gain(audiogroup_music, GUI_optionsMenu.op_button[? "Music"].uiValue/100, 1);
+			audio_group_set_gain(audiogroup_music, GUI_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
 			other.muteAll = false;
 		}
-		GUI.MUSIC_VOL = obj_optionsMenu.op_button[? "Music"].uiValue;
-		GUI.SFX_VOL = obj_optionsMenu.op_button[? "SFX"].uiValue;
+		GUI.MUSIC_VOL = GUI_optionsMenu.op_button[? "Music"].uiValue;
+		GUI.SFX_VOL = GUI_optionsMenu.op_button[? "SFX"].uiValue;
 		GUI.MUTE_ALL = other.muteAll;
 	break;
 	
 	case "x_music":
-		audio_group_set_gain(audiogroup_music, obj_optionsMenu.op_button[? "Music"].uiValue/100, 1);
-		GUI.MUSIC_VOL = obj_optionsMenu.op_button[? "Music"].uiValue;
+		audio_group_set_gain(audiogroup_music, GUI_optionsMenu.op_button[? "Music"].uiValue/100, 1);
+		GUI.MUSIC_VOL = GUI_optionsMenu.op_button[? "Music"].uiValue;
 	break;
 	
 	case "x_sfx":
-		audio_group_set_gain(audiogroup_sfx, obj_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
+		audio_group_set_gain(audiogroup_sfx, GUI_optionsMenu.op_button[? "SFX"].uiValue/100, 1);
 		if mouse_check_button_released(mb_left) {audio_play_sound(snd_alert,100,false);}
-		GUI.SFX_VOL = obj_optionsMenu.op_button[? "SFX"].uiValue;
+		GUI.SFX_VOL = GUI_optionsMenu.op_button[? "SFX"].uiValue;
 	break;
 	
 	case "x_large_font":
 		other.fontLarge = !other.fontLarge;
-		var bool = other.fontLarge;
-		GUI.fontLarge = bool;
-		GUI.tbFont = GUI.fonts[bool];
+		var _bool = other.fontLarge;
+		GUI.fontLarge = _bool;
+		GUI.tbFont = GUI.fonts[_bool];
 		with (ui_defaults) {
 			uiFont = GUI.tbFont;
 			var wScale = [180,360];

@@ -54,10 +54,10 @@ GUI_MID = layer_create(-75);
 GUI_FRONT = layer_create(-100);
 
 //Main
-instance_create_layer(0,room_height*1/4,GUI_MID,obj_leftMenu);
-instance_create_layer(room_width*1/4,-room_height*2/4,GUI.GUI_MID,obj_optionsMenu);
-instance_create_layer(0,0,GUI_MID,obj_textbox);
-instance_create_layer(0,0,GUI_FRONT,obj_alertbox);
+instance_create_layer(0,room_height*1/4,GUI_MID,GUI_leftMenu);
+instance_create_layer(room_width*1/4,-room_height*2/4,GUI.GUI_MID,GUI_optionsMenu);
+instance_create_layer(0,0,GUI_MID,GUI_textbox);
+instance_create_layer(0,0,GUI_FRONT,GUI_alertbox);
 instance_create_layer(0,0,GUI_FRONT,EVENTS);
 
 if !file_exists("config.ini") {

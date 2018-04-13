@@ -1,10 +1,10 @@
 var msg = argument0;
 
-//if instance_exists(obj_textbox) {
-//	instance_destroy(obj_textbox);
+//if instance_exists(GUI_textbox) {
+//	instance_destroy(GUI_textbox);
 //}
 
-ab = obj_alertbox;//instance_create_layer(0,room_height,GUI.GUI_MID,obj_textbox);
+ab = GUI_alertbox;//instance_create_layer(0,room_height,GUI.GUI_MID,GUI_textbox);
 var fadeVal = ab.fadeOut;
 ab.msg = msg;	
 	
