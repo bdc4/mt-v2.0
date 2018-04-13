@@ -7,7 +7,7 @@ randomize();
 
 /* ---- STRUCT NAMES ---- */
 // Declare the names of the various structs as global variables.
-// All non-global variables can be called by accessing C (ie: C.ShipNames);
+// All non-global variables can be called by accessing DATA (ie: DATA.ShipNames);
 
 	globalvar META;
 	globalvar ITEMS;
@@ -20,6 +20,10 @@ randomize();
 	globalvar ITEMNAMES; ITEMNAMES = ["rations", "medkits", "parts", "clothing", "money"];
 	globalvar PERKS;
 	globalvar FAULTS;
+	
+	globalvar DATE; DATE = 1;
+	globalvar TIME; TIME = ["Morning","Afternoon","Evening"];
+	globalvar PAUSED; PAUSED = false;
 
 /* ---- END STRUCT NAMES ---- */
 
@@ -39,8 +43,8 @@ randomize();
 //Inits the metadata the game will track/use
 
 	META = ds_map_create();
-	META[? "room"] = room_menu;
-	META[? "roomStart"] = room_mother_lobby;
+	META[? "room"] = room_init;
+	META[? "roomStart"] = room_init;
 	META[? "TD_posX"] = "None";
 	META[? "TD_posY"] = "None";
 	META[? "day"] = 0;
@@ -132,7 +136,7 @@ randomize();
 		char[? "hp"] = 100;
 		char[? "hpMax"] = 100;
 		char[? "morale"] = 100;
-		char[? "portrait"] = spr_portraitNone;
+		char[? "portrait"] = spr_empty;
 		char[? "img_index"] = 0;
 		char[? "assigned"] = SYSNAMES[i];
 		char[? "name"] = "None";
@@ -158,7 +162,7 @@ randomize();
 ---- */
 
 //Inits the base properties for each system in the SHIP
-	sysBackgrounds = [bg_medbay, bg_engines, bg_comms, bg_systems]
+	sysBackgrounds = [spr_empty, spr_empty, spr_empty, spr_empty]
 	SYSTEMS = ds_map_create();
 	for (var i=0; i<array_length_1d(SYSNAMES); i++) {
 		system = ds_map_create();
@@ -186,7 +190,8 @@ randomize();
 
 	SHIP = ds_map_create();
 	SHIP[? "name"] = "None";
-	SHIP[? "spr"] = spr_shipEmpty;
+	SHIP[? "spr"] = spr_empty;
+	SHIP[? "speed"] = 100;
 
 /* ---- END SHIP ---- */
 

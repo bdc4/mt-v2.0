@@ -60,6 +60,15 @@ switch (other.uiControlName) {
 			x_gui_update_alertbox("Event triggered!");
 			
 		}
+	break;
+	
+	case "x_pause":
+		PAUSED = !PAUSED;
+		var alerttext = !PAUSED ? "Unpause" : "Pause";
+		var pausetext = PAUSED ? "Unpause" : "Pause";
+		x_gui_update_alertbox("Game "+alerttext+"d!");
+		other.uiTextValue = pausetext;
+	break;
 	
 	default: exit;
 }

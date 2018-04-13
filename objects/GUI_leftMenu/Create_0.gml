@@ -48,7 +48,7 @@ with lm_button[? "Lock Menu"] {
 #endregion
 
 
-var btnLabels = ["Quit", "Save Game", "Options", "Test Event"];
+var btnLabels = ["Quit", "Save Game", "Options", "Test Event", "Pause"];
 
 for (var i=0; i < array_length_1d(btnLabels); i++) {
 	var label = btnLabels[i];
